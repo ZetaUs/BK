@@ -1,32 +1,32 @@
 @echo off
-echo [1/4] æ­£åœ¨æ‹‰å–è¿œç¨‹æ›´æ–°...
+echo [1/4] ÕıÔÚÀ­È¡Ô¶³Ì¸üĞÂ...
 E:\ZTX\Git\bin\git.exe pull origin main
 if errorlevel 1 (
-    echo æ‹‰å–å¤±è´¥ï¼Œå°è¯•åˆå¹¶...
+    echo À­È¡Ê§°Ü£¬³¢ÊÔºÏ²¢...
     E:\ZTX\Git\bin\git.exe fetch origin
     E:\ZTX\Git\bin\git.exe merge origin/main --allow-unrelated-histories
     if errorlevel 1 (
-        echo å‘ç°å†²çªï¼Œè¯·æ‰‹åŠ¨è§£å†³åè¿è¡Œæ­¤è„šæœ¬
+        echo ·¢ÏÖ³åÍ»£¬ÇëÊÖ¶¯½â¾öºóÔËĞĞ´Ë½Å±¾
         pause
         exit /b 1
     )
 )
 
-echo [2/4] æ­£åœ¨æ·»åŠ æ–‡ä»¶...
+echo [2/4] ÕıÔÚÌí¼ÓÎÄ¼ş...
 E:\ZTX\Git\bin\git.exe add .
 
-echo [3/4] æ­£åœ¨æäº¤...
+echo [3/4] ÕıÔÚÌá½»...
 E:\ZTX\Git\bin\git.exe commit -m "update"
 
-echo [4/4] æ­£åœ¨æ¨é€åˆ°è¿œç¨‹...
+echo [4/4] ÕıÔÚÍÆËÍµ½Ô¶³Ì...
 E:\ZTX\Git\bin\git.exe push -u origin main
 
 if errorlevel 1 (
-    echo æ¨é€å¤±è´¥ï¼
+    echo ÍÆËÍÊ§°Ü£¡
     pause
     exit /b 1
 )
 
 echo.
-echo å®Œæˆï¼ä»£ç å·²æˆåŠŸåŒæ­¥åˆ° GitHub
+echo Íê³É£¡´úÂëÒÑ³É¹¦Í¬²½µ½ GitHub
 pause
